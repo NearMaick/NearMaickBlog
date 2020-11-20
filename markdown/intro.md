@@ -1,3 +1,8 @@
+---
+title: "Montando meu blog pessoal, parte 1"
+description: "Aqui eu darei um breve introdução sobre como fazer seu próprio blog."
+---
+
 # Fala dev, tudo beleza:
 
 Aqui quem fala é o Maick Souza, conhecido como NearMaick, e aqui vou mostrar nessas série de posts como eu montei o meu blog pessoal.
