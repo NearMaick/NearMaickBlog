@@ -18,3 +18,12 @@ Para organizar as pastas do projeto, principalmente das página e da estilizaç�
 
 ### eslint
 ### prettier
+
+## Configurando as rotas dinâmicas
+
+## Configurando o Styled Components
+
+Eu, particularmente, prefiro usar essa lib para montar toda a estilização e organizar as folhas de estilo, pois este faz com que uma folha de uma página não interfira na outra, aravés do encapsulamento dos componentes.
+
+`yarn add styled-components`
+`yarn add @types/styled-components -D`
