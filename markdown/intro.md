@@ -27,3 +27,5 @@ Eu, particularmente, prefiro usar essa lib para montar toda a estilização e or
 
 `yarn add styled-components`
 `yarn add @types/styled-components -D`
+
+`yarn add babel-plugin-styled-components -D`
