@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
@@ -9,7 +9,11 @@ import GlobalStyle from '../styles/GlobalStyle'
 import Header from '../components/Header'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  const [theme, setTheme] = useState(light)
+  const [theme, setTheme] = useState(dark)
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(theme))
+  }, [theme])
 
   const toggleTheme = useCallback(() => {
     setTheme(theme.title === 'light' ? dark : light)

@@ -16,7 +16,7 @@ interface StaticProps {
     posts: string[]
   }
 }
-// parei aqui: 18'58 tema light/dark
+
 export default function Home(props: HomeProps): JSX.Element {
   return (
     <Container>
