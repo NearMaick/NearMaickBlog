@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next'
 import { getAllPosts, getPostBySlug } from '../../api/postApi'
+import PostLayout from '../../_layouts/PostLayout'
 
 export interface PostProps {
   title: string
@@ -19,7 +20,13 @@ interface PathsProps {
 }
 
 export default function Posts(props: PostProps): JSX.Element {
-  return <div>{props.content}</div>
+  return (
+    <PostLayout
+      title={props.title}
+      description={props.description}
+      content={props.content}
+    />
+  )
 }
 
 export const getStaticProps: GetStaticProps<any> = async (
