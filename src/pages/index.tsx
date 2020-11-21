@@ -1,5 +1,7 @@
 import { getAllPosts } from '../api/postApi'
-import { Title } from '../styles/pages/Home'
+import { Title, Container } from '../styles/pages/Home'
+
+import Logo from '../assets/back.svg'
 
 interface HomeProps {
   posts: Array<{
@@ -16,12 +18,13 @@ interface StaticProps {
 
 export default function Home(props: HomeProps): JSX.Element {
   return (
-    <>
+    <Container>
       <Title>Maick Souza</Title>
       {props.posts.map((post, idx) => (
         <Title key={idx}>{post.slug}</Title>
       ))}
-    </>
+      <Logo />
+    </Container>
   )
 }
 
