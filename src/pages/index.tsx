@@ -3,7 +3,6 @@ import { getAllPosts } from '../api/postApi'
 import { Title, Container } from '../styles/pages/Home'
 
 import Logo from '../assets/back.svg'
-import Header from '../components/Header'
 
 interface HomeProps {
   posts: Array<{
