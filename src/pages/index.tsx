@@ -3,6 +3,7 @@ import { getAllPosts } from '../api/postApi'
 import { Title, Container } from '../styles/pages/Home'
 
 import Logo from '../assets/back.svg'
+import Header from '../components/Header'
 
 interface HomeProps {
   posts: Array<{
@@ -16,10 +17,11 @@ interface StaticProps {
     posts: string[]
   }
 }
-
+// parei aqui: 18'58 tema light/dark
 export default function Home(props: HomeProps): JSX.Element {
   return (
     <Container>
+      <Header />
       <Title>Blog do Maick Souza</Title>
       <ul>
         {props.posts.map((post, idx) => (
