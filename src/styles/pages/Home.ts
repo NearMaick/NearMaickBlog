@@ -8,5 +8,5 @@ export const Container = styled.main`
 `
 
 export const Title = styled.h1`
-  color: #7159c1;
+  color: ${props => props.theme.colors.text};
 `

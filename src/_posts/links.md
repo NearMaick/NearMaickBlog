@@ -5,3 +5,4 @@ description: "Neste tópico eu coloco alguns lances que aprendi ao longo do dese
 
 https://www.youtube.com/watch?v=qvetoR6V5ic&t=1827s
 https://www.youtube.com/watch?v=1nVUfZg2dSA&t=856s
+https://www.youtube.com/watch?v=ngVU74daJ8Y&t=898s
