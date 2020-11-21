@@ -1,21 +1,26 @@
 import { useContext } from 'react'
 import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
+import { shade } from 'polished'
 
-function Header(): JSX.Element {
-  const { colors } = useContext(ThemeContext)
+interface Props {
+  toggleTheme(): void
+}
+
+function Header({ toggleTheme }: Props): JSX.Element {
+  const { colors, title } = useContext(ThemeContext)
 
   return (
     <>
       <Switch
-        onChange={() => {}}
-        checked={true}
+        onChange={toggleTheme}
+        checked={title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}
         height={10}
         width={40}
         handleDiameter={20}
-        offColor=""
+        offColor={shade(0.1, colors.primary)}
         onColor={colors.secondary}
       />
     </>

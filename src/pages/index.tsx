@@ -21,7 +21,6 @@ interface StaticProps {
 export default function Home(props: HomeProps): JSX.Element {
   return (
     <Container>
-      <Header />
       <Title>Blog do Maick Souza</Title>
       <ul>
         {props.posts.map((post, idx) => (
