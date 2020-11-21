@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getAllPosts } from '../api/postApi'
 import { Title, Container } from '../styles/pages/Home'
 
@@ -19,10 +20,16 @@ interface StaticProps {
 export default function Home(props: HomeProps): JSX.Element {
   return (
     <Container>
-      <Title>Maick Souza</Title>
-      {props.posts.map((post, idx) => (
-        <Title key={idx}>{post.slug}</Title>
-      ))}
+      <Title>Blog do Maick Souza</Title>
+      <ul>
+        {props.posts.map((post, idx) => (
+          <li key={idx}>
+            <Link href={`/posts/${post.slug}`}>
+              <a>{post.title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
       <Logo />
     </Container>
   )

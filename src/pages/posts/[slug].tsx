@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next'
+import Link from 'next/link'
 import { getAllPosts, getPostBySlug } from '../../api/postApi'
 import PostLayout from '../../_layouts/PostLayout'
 
@@ -21,11 +22,14 @@ interface PathsProps {
 
 export default function Posts(props: PostProps): JSX.Element {
   return (
-    <PostLayout
-      title={props.title}
-      description={props.description}
-      content={props.content}
-    />
+    <>
+      <PostLayout
+        title={props.title}
+        description={props.description}
+        content={props.content}
+      />
+      <Link href={'/'}>Voltar</Link>
+    </>
   )
 }
 
