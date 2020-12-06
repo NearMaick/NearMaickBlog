@@ -6,7 +6,8 @@ import light from '../styles/theme/light'
 import dark from '../styles/theme/dark'
 
 import GlobalStyle from '../styles/GlobalStyle'
-import Header from '../components/Header'
+import Menu from '../components/Menu'
+import ThemeSwitch from '../components/ThemeSwitch'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(dark)
@@ -21,8 +22,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header toggleTheme={toggleTheme} />
       <GlobalStyle />
+      <div id="menu-container">
+        <ThemeSwitch toggleTheme={toggleTheme} />
+        <Menu />
+      </div>
       <Component {...pageProps} />
     </ThemeProvider>
   )

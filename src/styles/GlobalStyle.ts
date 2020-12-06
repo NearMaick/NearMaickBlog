@@ -11,4 +11,12 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  div#menu-container {
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin: 0.2rem 1.6rem;
+    justify-content: space-between;
+  }
 `
