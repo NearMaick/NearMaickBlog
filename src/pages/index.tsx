@@ -1,4 +1,4 @@
-import { Container } from '../styles/pages/Home'
+import { Container, Title } from '../styles/pages/Home'
 
 import Logo from '../assets/back.svg'
 

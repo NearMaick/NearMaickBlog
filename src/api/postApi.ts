@@ -13,7 +13,8 @@ export async function getAllPosts(): Promise<string[]> {
 
     posts.push({
       slug: post.replace('.md', ''),
-      title: meta.data.title
+      title: meta.data.title,
+      description: meta.data.description
     })
   }
 

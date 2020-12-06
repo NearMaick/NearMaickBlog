@@ -7,7 +7,7 @@ export default function Header(): JSX.Element {
     <Container>
       <Link href="/">Home</Link>
       <Link href="/post">Posts</Link>
-      <Link href="/portfolio">Posts</Link>
+      <Link href="/portfolio">Portfolio</Link>
     </Container>
   )
 }

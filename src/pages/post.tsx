@@ -8,6 +8,7 @@ interface HomeProps {
   posts: Array<{
     slug: string
     title: string
+    description: string
   }>
 }
 
@@ -26,6 +27,7 @@ export default function Post(props: HomeProps): JSX.Element {
             <Link href={`/posts/${post.slug}`}>
               <a>{post.title}</a>
             </Link>
+            <h2>{post.description}</h2>
           </li>
         ))}
       </ul>
