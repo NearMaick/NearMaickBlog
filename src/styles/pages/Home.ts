@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  svg {
-    height: 200px;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.primary};
   }
 `
 

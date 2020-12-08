@@ -7,7 +7,7 @@ interface Props {
   toggleTheme(): void
 }
 
-function Header({ toggleTheme }: Props): JSX.Element {
+function ToggleSwitch({ toggleTheme }: Props): JSX.Element {
   const { colors, title } = useContext(ThemeContext)
 
   return (
@@ -27,4 +27,4 @@ function Header({ toggleTheme }: Props): JSX.Element {
   )
 }
 
-export default Header
+export default ToggleSwitch

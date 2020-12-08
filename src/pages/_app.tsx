@@ -6,7 +6,7 @@ import light from '../styles/theme/light'
 import dark from '../styles/theme/dark'
 
 import GlobalStyle from '../styles/GlobalStyle'
-import Header from '../components/Header'
+import ToggleSwitch from '../components/ToggleSwitch'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   const [theme, setTheme] = useState(dark)
@@ -21,7 +21,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header toggleTheme={toggleTheme} />
+      <ToggleSwitch toggleTheme={toggleTheme} />
       <GlobalStyle />
       <Component {...pageProps} />
     </ThemeProvider>

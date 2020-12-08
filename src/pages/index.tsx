@@ -30,7 +30,6 @@ export default function Home(props: HomeProps): JSX.Element {
           </li>
         ))}
       </ul>
-      <Logo />
     </Container>
   )
 }

@@ -37,7 +37,8 @@ export const getStaticProps: GetStaticProps<any> = async (
   context: ContextProps
 ) => {
   return {
-    props: await getPostBySlug(context.params.slug)
+    props: await getPostBySlug(context.params.slug),
+    revalidate: 5
   }
 }
 

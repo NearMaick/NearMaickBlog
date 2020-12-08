@@ -16,6 +16,7 @@ export default function PostLayout(props: PostLayoutProps): JSX.Element {
       <article>
         <h1>{props.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: props.content }} />
+        {/* <div>{props.content}</div> */}
       </article>
     </main>
   )
