@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { Container } from '../styles/layouts/PostLayout'
+
 interface PostLayoutProps {
   title: string
   description: string
@@ -8,7 +10,7 @@ interface PostLayoutProps {
 
 export default function PostLayout(props: PostLayoutProps): JSX.Element {
   return (
-    <main>
+    <Container>
       <Head>
         <title>{props.title}</title>
         <meta name="description" content={props.description} />
@@ -17,6 +19,6 @@ export default function PostLayout(props: PostLayoutProps): JSX.Element {
         <h1>{props.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: props.content }} />
       </article>
-    </main>
+    </Container>
   )
 }

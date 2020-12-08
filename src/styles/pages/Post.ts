@@ -1,21 +1,32 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  width: 100%;
-
   ul {
     display: flex;
+    justify-content: space-between;
 
     list-style-type: none;
 
+    a {
+      text-decoration: none;
+    }
+
     li {
-      width: 400px;
-      height: 520px;
+      width: 360px;
+      height: 420px;
+
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-around;
+
+      border-radius: 1.6rem;
 
       margin: 1.6rem;
       padding: 1.6rem;
 
-      background: #03719c;
+      background: ${props => props.theme.colors.primary};
+      color: ${props => props.theme.colors.text};
     }
   }
 `

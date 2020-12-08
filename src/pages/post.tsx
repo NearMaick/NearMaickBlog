@@ -26,10 +26,12 @@ export default function Post(props: HomeProps): JSX.Element {
         {props.posts.map((post, idx) => (
           <div key={idx}>
             <Link href={`/posts/${post.slug}`}>
-              <li>
-                <a>{post.title}</a>
-                <h2>{post.description}</h2>
-              </li>
+              <a>
+                <li>
+                  <h2>{post.title}</h2>
+                  <p>{post.description}</p>
+                </li>
+              </a>
             </Link>
           </div>
         ))}
