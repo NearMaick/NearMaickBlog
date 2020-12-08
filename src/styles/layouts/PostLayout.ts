@@ -1,9 +1,27 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  line-height: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  h1 {
-    text-align: center;
+  line-height: 2rem;
+
+  a {
+    text-decoration: none;
+    text-align: left;
+  }
+
+  article {
+    width: 80%;
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      margin: 1.6rem 25%;
+    }
   }
 `

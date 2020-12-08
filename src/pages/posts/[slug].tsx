@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next'
-import Link from 'next/link'
 import { getAllPosts, getPostBySlug } from '../../api/postApi'
 import PostLayout from '../../_layouts/PostLayout'
 
@@ -28,7 +27,6 @@ export default function Posts(props: PostProps): JSX.Element {
         description={props.description}
         content={props.content}
       />
-      <Link href={'/post'}>Voltar</Link>
     </>
   )
 }
