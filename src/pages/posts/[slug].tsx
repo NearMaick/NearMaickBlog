@@ -28,7 +28,7 @@ export default function Posts(props: PostProps): JSX.Element {
         description={props.description}
         content={props.content}
       />
-      <Link href={'/'}>Voltar</Link>
+      <Link href={'/post'}>Voltar</Link>
     </>
   )
 }
@@ -37,7 +37,8 @@ export const getStaticProps: GetStaticProps<any> = async (
   context: ContextProps
 ) => {
   return {
-    props: await getPostBySlug(context.params.slug)
+    props: await getPostBySlug(context.params.slug),
+    revalidate: 5
   }
 }
 
