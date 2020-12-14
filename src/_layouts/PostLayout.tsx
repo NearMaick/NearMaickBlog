@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { Container } from '../styles/layouts/PostLayout'
+import { Container, ContentContainer } from '../styles/layouts/PostLayout'
 
 interface PostLayoutProps {
   title: string
@@ -18,7 +18,7 @@ export default function PostLayout(props: PostLayoutProps): JSX.Element {
       </Head>
       <article>
         <h1>{props.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: props.content }} />
+        <ContentContainer dangerouslySetInnerHTML={{ __html: props.content }} />
       </article>
       <Link href={'/post'}>
         <a>Voltar</a>

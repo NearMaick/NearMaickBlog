@@ -8,20 +8,32 @@ export const Container = styled.main`
 
   line-height: 2rem;
 
+  h1 {
+    padding: 2.4rem;
+  }
+
   a {
     text-decoration: none;
     text-align: left;
+    color: #fff;
   }
 
   article {
     width: 80%;
 
     h1 {
+      padding: 3.2rem 0;
+      line-height: 3.2rem;
       text-align: center;
     }
+  }
+`
 
-    img {
-      margin: 1.6rem 25%;
-    }
+export const ContentContainer = styled.div`
+  padding: 1.6rem 3.2rem;
+  line-height: 3.2rem;
+
+  img {
+    margin: 1.6rem 25%;
   }
 `

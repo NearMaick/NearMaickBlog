@@ -27,6 +27,11 @@ export const Container = styled.main`
 
       background: ${props => props.theme.colors.primary};
       color: ${props => props.theme.colors.text};
+
+      h2 {
+        padding: 1.6rem;
+        line-height: 3.2rem;
+      }
     }
   }
 `

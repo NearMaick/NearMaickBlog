@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-
     "next": "10.0.2",
     "next-images": "^1.6.2",
     "polished": "^4.0.3",

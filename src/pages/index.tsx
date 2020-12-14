@@ -8,6 +8,8 @@ import {
 } from '../styles/pages/Home'
 
 import LampIdea from '../assets/lampIdea.svg'
+import Computer from '../assets/comp.png'
+import Lamp from '../assets/lamp.png'
 
 export default function Posts(): JSX.Element {
   return (
@@ -32,7 +34,7 @@ export default function Posts(): JSX.Element {
       </p>
 
       <ContentContainer>
-        <img src="https://cdn.discordapp.com/attachments/475058104992792587/787356172046172190/computer.svg" />
+        <Image src={Computer} width={484} height={256} />
         <Subtitle>
           <h3>
             Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem
@@ -52,7 +54,7 @@ export default function Posts(): JSX.Element {
       </ContentContainer>
 
       <ContentContainer>
-        <img src="https://cdn.discordapp.com/attachments/475058104992792587/787363846112542750/cloudBack.svg" />
+        <Image src={Lamp} width={360} height={740} />
         <Subtitle>
           <h3>
             Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem
