@@ -20,8 +20,6 @@ export const Container = styled.main`
 `
 
 export const SubtitleContainer = styled.section`
-  background: ${props => props.theme.colors.primary};
-
   padding: 2.4rem 0;
   border-radius: 1.6rem;
 

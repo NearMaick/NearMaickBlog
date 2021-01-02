@@ -18,11 +18,13 @@ function ThemeSwitch({ toggleTheme }: Props): JSX.Element {
         checked={title === 'dark'}
         checkedIcon={false}
         uncheckedIcon={false}
-        height={10}
+        height={15}
         width={40}
         handleDiameter={20}
         offColor={shade(0.1, colors.primary)}
         onColor={colors.secondary}
+        offHandleColor="#000"
+        onHandleColor="#fff"
       />
     </Container>
   )

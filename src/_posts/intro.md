@@ -21,6 +21,8 @@ Para organizar as pastas do projeto, principalmente das página e da estilizaç�
 
 ![Web Page](https://cdn.discordapp.com/attachments/475058104992792587/785952173035880478/Peek_08-12-2020_16-32.gif)
 
+![Web Page](http://localhost:3000/api/serve)
+
 ### Configurando um padrão de código no projeto
 
 #### eslint

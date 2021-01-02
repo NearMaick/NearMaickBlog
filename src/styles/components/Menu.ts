@@ -10,7 +10,9 @@ export const Container = styled.nav`
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.text};
+
+    font-size: 1.6rem;
 
     transition: opacity 0.4s;
 

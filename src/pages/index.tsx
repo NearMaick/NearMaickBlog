@@ -7,6 +7,7 @@ import {
   ContentContainer
 } from '../styles/pages/Home'
 
+import Logo from '../assets/logo.svg'
 import LampIdea from '../assets/lampIdea.svg'
 import Computer from '../assets/comp.png'
 import Lamp from '../assets/lamp.png'
@@ -20,7 +21,9 @@ export default function Posts(): JSX.Element {
       <SubtitleContainer>
         <LampIdea />
         <Subtitle>
-          <h1>Sejam bem-vindos ao bloguei.com.br</h1>
+          <h1>
+            <Logo />
+          </h1>
           <h2>As melhores ideias passam por aqui</h2>
           <h3>
             Dentre as ideias temos assuntos relacionados à tecnologia, mundo
