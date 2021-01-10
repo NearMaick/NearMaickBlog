@@ -23,6 +23,10 @@ Para organizar as pastas do projeto, principalmente das página e da estilizaç�
 
 ![Web Page](http://localhost:3000/api/serve)
 
+<figure>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/_IedSanGvdg?loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
+
 ### Configurando um padrão de código no projeto
 
 #### eslint

@@ -5,8 +5,8 @@ const dark = {
     primary: '#02066F',
     secondary: '#00022E',
     tertiary: '#FF073A',
-    background: '#050A27',
-    text: '#cddddc'
+    background: '#070d0d',
+    text: '#fdfdfe'
   }
 }
 

@@ -7,9 +7,8 @@ import {
   ContentContainer
 } from '../styles/pages/Home'
 
-import Logo from '../assets/logo.svg'
-import LampIdea from '../assets/lampIdea.svg'
-import Computer from '../assets/comp.png'
+import Developer from '../assets/devIllustration.svg'
+import Computer from '../assets/comp2.svg'
 import Lamp from '../assets/lamp.png'
 
 export default function Posts(): JSX.Element {
@@ -19,11 +18,10 @@ export default function Posts(): JSX.Element {
         <title>bloguei.com.br: o seu marketplace de conteúdo</title>
       </Head>
       <SubtitleContainer>
-        <LampIdea />
+        <figure>
+          <Developer />
+        </figure>
         <Subtitle>
-          <h1>
-            <Logo />
-          </h1>
           <h2>As melhores ideias passam por aqui</h2>
           <h3>
             Dentre as ideias temos assuntos relacionados à tecnologia, mundo
@@ -37,7 +35,7 @@ export default function Posts(): JSX.Element {
       </p>
 
       <ContentContainer>
-        <Image src={Computer} width={484} height={256} />
+        <Computer />
         <Subtitle>
           <h3>
             Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem

@@ -5,8 +5,8 @@ const light = {
     primary: '#FCE166',
     secondary: '#34013F',
     tertiary: '#069AF3',
-    background: '#fff8e8',
-    text: '#333'
+    background: '#fdfdfe',
+    text: '#070d0d'
   }
 }
 

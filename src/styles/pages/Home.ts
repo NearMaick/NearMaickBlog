@@ -1,17 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  margin-top: 10rem;
+  margin-top: 8rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
-  svg {
-    width: 200px;
-    padding: 0 2.4rem;
-  }
 
   p {
     font-size: 2.4rem;
@@ -28,10 +23,14 @@ export const SubtitleContainer = styled.section`
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+
+  svg {
+    width: 700px;
+    padding: 0 2.4rem;
+  }
 `
 
 export const Subtitle = styled.article`
-  margin: 2.4rem 0 2.4rem;
   padding: 2.4rem 0;
 
   width: 50%;
@@ -44,8 +43,18 @@ export const Subtitle = styled.article`
 
   text-align: center;
 
-  // background: #f0f;
   border-radius: 1.6rem;
+
+  h2 {
+    font-size: 6.2rem;
+    font-family: 'Pacifico';
+
+    line-height: 5.6rem;
+  }
+
+  svg {
+    width: 600px;
+  }
 `
 
 export const ContentContainer = styled.section`
@@ -61,5 +70,10 @@ export const ContentContainer = styled.section`
   p {
     font-size: 1.6rem;
     margin: 0;
+  }
+
+  svg {
+    width: 100px;
+    padding: 0 2.4rem;
   }
 `

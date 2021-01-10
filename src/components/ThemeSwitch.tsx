@@ -22,7 +22,7 @@ function ThemeSwitch({ toggleTheme }: Props): JSX.Element {
         width={40}
         handleDiameter={20}
         offColor={shade(0.1, colors.primary)}
-        onColor={colors.secondary}
+        onColor={colors.tertiary}
         offHandleColor="#000"
         onHandleColor="#fff"
       />
