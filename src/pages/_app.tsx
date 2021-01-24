@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from 'react'
 import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
+import 'sal.js/dist/sal.css'
 import light from '../styles/theme/light'
 import dark from '../styles/theme/dark'
 

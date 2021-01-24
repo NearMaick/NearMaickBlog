@@ -14,6 +14,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-switch": "^5.0.1",
+    "sal.js": "^0.8.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

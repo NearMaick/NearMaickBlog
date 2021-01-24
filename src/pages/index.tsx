@@ -7,11 +7,20 @@ import {
   ContentContainer
 } from '../styles/pages/Home'
 
+import sal from 'sal.js'
+
 import Developer from '../assets/devIllustration.svg'
 import Computer from '../assets/comp2.svg'
 import Lamp from '../assets/lamp.png'
+import { useEffect } from 'react'
 
 export default function Posts(): JSX.Element {
+  useEffect(() => {
+    sal({
+      threshold: 1,
+      once: false
+    })
+  }, [])
   return (
     <Container>
       <Head>
@@ -21,7 +30,11 @@ export default function Posts(): JSX.Element {
         <figure>
           <Developer />
         </figure>
-        <Subtitle>
+        <Subtitle
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease-out-back"
+        >
           <h2>As melhores ideias passam por aqui</h2>
           <h3>
             Dentre as ideias temos assuntos relacionados à tecnologia, mundo
