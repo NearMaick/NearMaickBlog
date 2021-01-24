@@ -19,12 +19,13 @@ Primeiramente subi uma instância já pronta do NextJS fazendo o:
 
 Para organizar as pastas do projeto, principalmente das página e da estilização dos componentes eu gosto de seguir o seguinte: crio uma página `src` para definir os arquivos inerentes ao projeto.
 
-![Web Page](https://cdn.discordapp.com/attachments/475058104992792587/785952173035880478/Peek_08-12-2020_16-32.gif)
+[![Peek-08-12-2020-16-32.gif](https://i.postimg.cc/xCzy9NFG/Peek-08-12-2020-16-32.gif)](https://postimg.cc/jwRJX2TC)
 
 ![Web Page](http://localhost:3000/api/serve)
 
+
 <figure>
-  <iframe width="1280" height="720" src="https://www.youtube.com/embed/_IedSanGvdg?loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="720" height="480" src="https://www.youtube.com/embed/_IedSanGvdg?loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
 ### Configurando um padrão de código no projeto

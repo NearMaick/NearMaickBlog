@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
 export const MenuContainer = styled.div`
+  width: 100%;
+  height: 16rem;
+
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 
   margin: 0.2rem 1.6rem;
   align-items: center;

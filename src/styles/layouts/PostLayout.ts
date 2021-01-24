@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.main`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -19,7 +18,12 @@ export const Container = styled.main`
   }
 
   article {
-    width: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h1 {
       padding: 3.2rem 0;
@@ -34,6 +38,6 @@ export const ContentContainer = styled.div`
   line-height: 3.2rem;
 
   img {
-    margin: 1.6rem 25%;
+    height: 360px;
   }
 `

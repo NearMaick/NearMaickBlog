@@ -33,5 +33,6 @@ export const LinkContainer = styled.menu`
   width: 40rem;
 
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `
