@@ -26,8 +26,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <MenuContainer>
-        <ThemeSwitch toggleTheme={toggleTheme} />
         <Menu />
+        <ThemeSwitch toggleTheme={toggleTheme} />
       </MenuContainer>
       <Component {...pageProps} />
     </ThemeProvider>
