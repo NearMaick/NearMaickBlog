@@ -10,6 +10,10 @@ export default createGlobalStyle`
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+    @media(max-width: 360px){
+      display: flex;
+    }
   }
 
   h1 {
@@ -26,14 +30,5 @@ export default createGlobalStyle`
 
   p {
     font-size: 1.2rem;
-  }
-
-  div#menu-container {
-    display: flex;
-    flex-direction: row-reverse;
-
-    margin: 0.2rem 1.6rem;
-    align-items: center;
-    justify-content: space-between;
   }
 `

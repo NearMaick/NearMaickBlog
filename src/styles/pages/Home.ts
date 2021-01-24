@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  margin-top: 8rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -21,19 +19,20 @@ export const SubtitleContainer = styled.section`
   margin-bottom: 2.4rem;
 
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   justify-content: space-around;
 
   svg {
-    width: 700px;
+    width: 900px;
     padding: 0 2.4rem;
   }
 `
 
 export const Subtitle = styled.article`
   padding: 2.4rem 0;
+  margin: 0 1.6rem;
 
-  width: 50%;
+  width: 100%;
   height: 400px;
 
   display: flex;
@@ -48,18 +47,19 @@ export const Subtitle = styled.article`
   h2 {
     font-size: 6.2rem;
     font-family: 'Pacifico';
-
+    font-weight: 300;
     line-height: 5.6rem;
+    margin-bottom: 3.2rem;
   }
 
   svg {
-    width: 600px;
+    width: 900px;
   }
 `
 
 export const ContentContainer = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
 
