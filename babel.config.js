@@ -2,6 +2,21 @@ module.exports = {
   "presets": ["next/babel"],
   "plugins": [
     ["styled-components", { "ssr": true }],
-    "inline-react-svg"
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "removeAttrs": { "attrs": "(data-name)" }
+            },
+            {
+              "cleanupIDs": true
+            }
+          ]
+
+        }
+      }
+    ]
   ]
 }
