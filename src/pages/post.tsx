@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import { getAllPosts } from '../api/postApi'
-import { Container } from '../styles/pages/Post'
-
-import Logo from '../assets/back.svg'
-
+import {
+  Container,
+  PostListContent,
+  PostGridList,
+  PostGridListCard
+} from '../styles/pages/Post'
 interface HomeProps {
   posts: Array<{
     slug: string
@@ -22,20 +24,20 @@ interface StaticProps {
 export default function Post(props: HomeProps): JSX.Element {
   return (
     <Container>
-      <ul>
+      <PostGridList>
         {props.posts.map((post, idx) => (
-          <div key={idx}>
+          <PostGridListCard key={idx}>
             <Link href={`/posts/${post.slug}`}>
               <a>
-                <li>
+                <PostListContent>
                   <h2>{post.title}</h2>
                   <p>{post.description}</p>
-                </li>
+                </PostListContent>
               </a>
             </Link>
-          </div>
+          </PostGridListCard>
         ))}
-      </ul>
+      </PostGridList>
     </Container>
   )
 }

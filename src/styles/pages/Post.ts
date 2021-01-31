@@ -1,50 +1,56 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
-  ul {
+export const Container = styled.main``
+
+export const PostGridList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  list-style-type: none;
+
+  @media (min-width: 361px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-template-rows: repeat(auto-fit, 35rem);
+
+    grid-gap: 1.6rem;
+  }
+`
+
+export const PostGridListCard = styled.div`
+  a {
+    text-decoration: none;
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+  }
+`
 
-    list-style-type: none;
+export const PostListContent = styled.li`
+  width: 100%;
+  height: 420px;
 
-    @media (min-width: 361px) {
-      flex-direction: row;
-    }
+  display: flex;
+  flex-direction: column;
 
-    a {
-      text-decoration: none;
+  justify-content: space-around;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  border-radius: 1.6rem;
 
-    li {
-      width: 100%;
-      height: 420px;
+  margin: 1.6rem;
+  padding: 1.6rem;
 
-      display: flex;
-      flex-direction: column;
+  background: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.text};
 
-      justify-content: space-around;
+  @media (min-width: 361px) {
+    width: 360px;
+  }
 
-      border-radius: 1.6rem;
-
-      margin: 1.6rem;
-      padding: 1.6rem;
-
-      background: ${props => props.theme.colors.primary};
-      color: ${props => props.theme.colors.text};
-
-      @media (min-width: 361px) {
-        width: 360px;
-      }
-
-      h2 {
-        padding: 1.6rem;
-        line-height: 3.2rem;
-      }
-    }
+  h2 {
+    padding: 1.6rem;
+    line-height: 3.2rem;
   }
 `
