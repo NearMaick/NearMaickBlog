@@ -18,9 +18,6 @@ export default function Posts(): JSX.Element {
         <title>bloguei.com.br: o seu marketplace de conteúdo</title>
       </Head>
       <SubtitleContainer>
-        <figure>
-          <Developer />
-        </figure>
         <Subtitle>
           <h2>As melhores ideias passam por aqui</h2>
           <h3>
@@ -28,6 +25,9 @@ export default function Posts(): JSX.Element {
             Geek, games, e muito mais.
           </h3>
         </Subtitle>
+        <figure>
+          <Developer />
+        </figure>
       </SubtitleContainer>
       <p>
         Por aqui o internauta pode se deliciar entre os mais diversos assuntos

@@ -19,12 +19,16 @@ export const SubtitleContainer = styled.section`
   margin-bottom: 2.4rem;
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-around;
 
   svg {
     width: 900px;
     padding: 0 2.4rem;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
   }
 `
 

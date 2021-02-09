@@ -9,9 +9,9 @@ export const PostGridList = styled.ul`
 
   list-style-type: none;
 
-  @media (min-width: 361px) {
+  @media (min-width: 769px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-template-columns: repeat(auto-fit, 27rem);
     grid-template-rows: repeat(auto-fit, 35rem);
 
     grid-gap: 1.6rem;
@@ -44,10 +44,6 @@ export const PostListContent = styled.li`
 
   background: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.text};
-
-  @media (min-width: 361px) {
-    width: 360px;
-  }
 
   h2 {
     padding: 1.6rem;

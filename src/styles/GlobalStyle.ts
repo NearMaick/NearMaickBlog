@@ -11,8 +11,10 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 
-    @media(max-width: 360px){
-      display: flex;
+    display: flex;
+
+    @media(min-width: 769px) {
+      display: block;
     }
   }
 
