@@ -15,7 +15,7 @@ export default function Menu(): JSX.Element {
           <a>Posts</a>
         </Link>
         <Link href="/portfolio">
-          <a>Portfolio</a>
+          <a>Sobre</a>
         </Link>
       </LinkContainer>
     </Container>

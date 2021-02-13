@@ -11,7 +11,7 @@ import Menu from '../components/Menu'
 import ThemeSwitch from '../components/ThemeSwitch'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  const [theme, setTheme] = useState(light)
+  const [theme, setTheme] = useState(dark)
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme))
