@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import {
   Container,
@@ -10,13 +9,16 @@ import {
 import Developer from '../assets/devIllustration.svg'
 import Computer from '../assets/comp2.svg'
 import Lamp from '../assets/lamp.png'
+import SEO from '../components/SEO'
 
 export default function Posts(): JSX.Element {
   return (
     <Container>
-      <Head>
-        <title>bloguei.com.br: o seu marketplace de conteúdo</title>
-      </Head>
+      <SEO
+        title="bloguei.com.br: o seu marketplace de conteúdo"
+        shouldExcludeTitleSuffix
+      />
+
       <SubtitleContainer>
         <Subtitle>
           <h2>As melhores ideias passam por aqui</h2>
