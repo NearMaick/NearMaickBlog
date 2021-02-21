@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import ejs from 'ejs'
 import path from 'path'
-import pdf from 'html-pdf'
 
 export default function (
   request: NextApiRequest,
@@ -40,23 +39,6 @@ export default function (
       return response.send('Error loading file')
     }
 
-    const options = {
-      height: '11.25in',
-      width: '8.5in',
-      header: {
-        height: '20mm'
-      },
-      footer: {
-        height: '20mm'
-      }
-    }
-
-    pdf.create(html, options).toFile('report.pdf', (err, data) => {
-      if (err) {
-        return response.send('Error generating PDF file')
-      }
-
-      return response.send(html)
-    })
+    return response.send(html)
   })
 }

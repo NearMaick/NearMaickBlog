@@ -13,6 +13,7 @@
     "next": "10.0.2",
     "next-images": "^1.6.2",
     "polished": "^4.0.3",
+    "puppeteer": "^7.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-switch": "^5.0.1",
