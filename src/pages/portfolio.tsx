@@ -71,6 +71,12 @@ export default function Portfolio(): JSX.Element {
         praticamente do zero todos os conceitos. A jornada estava apenas
         começando...
       </p>
+      <p>
+        Foi a partir desse momento que tive o primeiro contato com o NodeJS. Foi
+        através dele que consegui aplicar boa barte do que aprendi na faculdade
+        (trabalhar com banco de dados, manipular dados através de um servidor
+        API)
+      </p>
     </>
   )
 }

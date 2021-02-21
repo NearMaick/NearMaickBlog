@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "ejs": "^3.1.6",
+    "html-pdf": "^2.2.0",
     "next": "10.0.2",
     "next-images": "^1.6.2",
     "polished": "^4.0.3",
@@ -17,6 +19,8 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "@types/ejs": "^3.0.6",
+    "@types/html-pdf": "^2.2.0",
     "@types/marked": "^1.2.0",
     "@types/node": "^14.14.9",
     "@types/react": "^16.14.0",
