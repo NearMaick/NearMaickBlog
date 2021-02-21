@@ -8,7 +8,7 @@ export default async function (
   const browser = await puppeteer.launch({ headless: true })
   const page = await browser.newPage()
 
-  await page.goto('http://localhost:3000/api/serve', {
+  await page.goto(`${process.env.NEXT_PUBLIC_API_URL}/api/serve`, {
     waitUntil: 'networkidle0'
   })
 
