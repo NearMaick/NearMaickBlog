@@ -26,11 +26,9 @@ export default function (
 
   const filePath = path.join(__dirname, `${process.env.API_FILE_PATH}`)
 
-  console.log(filePath)
-
   ejs.renderFile(filePath, { passengers }, (err, html) => {
     if (err) {
-      return response.send('Error loading file')
+      return response.send(`Error loading file, ${err}`)
     }
 
     return response.send(html)
