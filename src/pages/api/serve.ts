@@ -24,10 +24,7 @@ export default function (
     }
   ]
 
-  const filePath = path.join(
-    __dirname,
-    '/home/nearmaick/personalProjects/nearmaickblog/src/pages/api/print.ejs'
-  )
+  const filePath = path.join(__dirname, process.env.API_FILE_PATH)
 
   console.log(filePath)
 
