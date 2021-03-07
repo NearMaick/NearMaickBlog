@@ -2,10 +2,11 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import puppeteer from 'puppeteer'
 import { getOptions } from './_lib/chromeOptions'
 
+const isDev = !process.env.AWS_REGION
+
 export default async function (
   request: NextApiRequest,
-  response: NextApiResponse,
-  isDev: boolean
+  response: NextApiResponse
 ): Promise<void> {
   const options = await getOptions(isDev)
 

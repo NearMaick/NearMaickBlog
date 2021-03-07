@@ -26,14 +26,7 @@ export default function (
 
   const filePath = path.join(
     __dirname,
-    'home',
-    'nearmaick',
-    'personalProjects',
-    'nearmaickblog',
-    'src',
-    'pages',
-    'api',
-    'print.ejs'
+    '/home/nearmaick/personalProjects/nearmaickblog/src/pages/api/print.ejs'
   )
 
   console.log(filePath)
