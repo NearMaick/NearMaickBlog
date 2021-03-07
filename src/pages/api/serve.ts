@@ -26,13 +26,17 @@ export default function (
 
   const filePath = path.join(
     __dirname,
-    'codes',
-    'MyBlog',
+    'home',
+    'nearmaick',
+    'personalProjects',
+    'nearmaickblog',
     'src',
     'pages',
     'api',
     'print.ejs'
   )
+
+  console.log(filePath)
 
   ejs.renderFile(filePath, { passengers }, (err, html) => {
     if (err) {

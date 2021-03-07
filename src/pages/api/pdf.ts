@@ -1,11 +1,15 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import puppeteer from 'puppeteer'
+import { getOptions } from './_lib/chromeOptions'
 
 export default async function (
   request: NextApiRequest,
-  response: NextApiResponse
+  response: NextApiResponse,
+  isDev: boolean
 ): Promise<void> {
-  const browser = await puppeteer.launch({ headless: true })
+  const options = await getOptions(isDev)
+
+  const browser = await puppeteer.launch(options)
   const page = await browser.newPage()
 
   await page.goto(`${process.env.NEXT_PUBLIC_API_URL}/api/serve`, {
